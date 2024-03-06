@@ -1,13 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import MeuComponente from './componentes/MeuComponente';
+import { Titulo, Mensagem, somar} from './componentes/Componentes';
+import * as MeuComponentes from './componentes/Componentes';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <MeuComponente></MeuComponente>
-      <MeuComponenteAuxiliar></MeuComponenteAuxiliar>
+      <MeuComponentes.Titulo texto = "Esse é o título"></MeuComponentes.Titulo>
+      <Mensagem conteudo = "Esse é o conteudo"></Mensagem>
       <StatusBar style="auto" />
     </View>
   );

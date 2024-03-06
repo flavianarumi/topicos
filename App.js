@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import MeuComponente from './componentes/MeuComponente';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>OIIIIIIIIIIIIIII {'\u2764'}</Text>
+      <MeuComponente></MeuComponente>
       <StatusBar style="auto" />
     </View>
   );

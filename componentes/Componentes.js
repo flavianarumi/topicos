@@ -7,11 +7,11 @@ export const Titulo = ({ texto }) => (
     </View>
 );
 
-export const Mensagem = ({ conteudo }) => {
+export const Mensagem = ({ conteudo }) => (
     <View>
         <Text style = {{fontSize: 18}}>{conteudo}</Text>
     </View>
-};
+);
 
 // uma função utilitatia para calcular algo, por exemplo a soma
 export const somar = (x, y) => x + y;

@@ -7,10 +7,20 @@ export default function App() {
   return (
     <View style={styles.container}>
       <MeuComponente></MeuComponente>
+      <MeuComponenteAuxiliar></MeuComponenteAuxiliar>
       <StatusBar style="auto" />
     </View>
   );
 }
+
+// componente auxiliar
+const MeuComponenteAuxiliar = () => {
+  return (
+    <View>
+      <Text>Auxiliar</Text>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {

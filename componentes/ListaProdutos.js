@@ -10,7 +10,11 @@ export default props => {
         <Text style = {Estilo.TextGrande}>
             Lista de Produtos
         </Text>
-        {carregaLista()} //p chamar func dentro de uma tag
+
+        <Text>
+            {/*para pular linha na tela*/}
+        </Text>
+        {carregaLista()} {/*para chamar func dentro da tag*/}
         {produtos.map(p => {
             return <Text key = {p.id}>{p.id} - {p.nome} - Preço R$ {p.preco}</Text>
         })

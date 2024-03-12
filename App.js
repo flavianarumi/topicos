@@ -1,4 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
+{/*import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Titulo, Mensagem, somar} from './componentes/Componentes';
@@ -32,3 +32,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+*/}
+
+import React from 'react';
+import { Text, StyleSheet, View } from 'react-native';
+import styles from './estilos.js';
+import Props from './componentes/ListaProdutos.js';
+
+export default function App() {
+  return (
+    <View style = {styles.container}>
+      <Props></Props>
+    </View>
+  );
+}

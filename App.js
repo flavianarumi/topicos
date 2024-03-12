@@ -37,12 +37,15 @@ const styles = StyleSheet.create({
 import React from 'react';
 import { Text, StyleSheet, View } from 'react-native';
 import styles from './estilos.js';
-import Props from './componentes/ListaProdutos.js';
+import ListaProdutos from './componentes/ListaProdutos.js';
+import produtos from './componentes/produtos.js';
+
+{/*deixa o listaProdutos flexivel, pq esta como default la no arquivo*/}
 
 export default function App() {
   return (
     <View style = {styles.container}>
-      <Props></Props>
+      <ListaProdutos lista = {produtos} nome = 'Qualquer coisa'></ListaProdutos>
     </View>
   );
 }

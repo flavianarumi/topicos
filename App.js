@@ -57,5 +57,6 @@ import styles from './estilos.js';
 import Contador from './componentes/Contador.js'
 
 <View styles = {styles.container}> 
-  <Contador inicial = "0"></Contador>
+  <Contador inicial = "0" passo = "1"/> 
+  {/* passo - de quanto em quanto vai incrementar */}
 </View>

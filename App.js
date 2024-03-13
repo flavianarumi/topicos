@@ -54,11 +54,10 @@
 //-----------------------------------------------
 import { Text, View, Button} from 'react-native';
 import styles from './estilos.js';
+import MyButton from './componentes/MyButton.js'
+
 <View styles = {styles.container}> 
-  <Button 
-    title="Clique em mim!"
-    onPress={() => {
-      console.warn('O botao foi pressionado!')
-    }}>
-  </Button>
+  <MyButton 
+    label = "OK"
+    onClick = {() => console.warn("Testando")}/>
 </View>

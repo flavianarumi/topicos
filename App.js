@@ -54,10 +54,8 @@
 //-----------------------------------------------
 import { Text, View, Button} from 'react-native';
 import styles from './estilos.js';
-import MyButton from './componentes/MyButton.js'
+import Contador from './componentes/Contador.js'
 
 <View styles = {styles.container}> 
-  <MyButton 
-    label = "OK"
-    onClick = {() => console.warn("Testando")}/>
+  <Contador inicial = "0"></Contador>
 </View>

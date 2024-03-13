@@ -52,11 +52,31 @@
 // }
 
 //-----------------------------------------------
-import { Text, View, Button} from 'react-native';
-import styles from './estilos.js';
-import Contador from './componentes/Contador.js'
+// import { Text, View, Button} from 'react-native';
+// import styles from './estilos.js';
+// import Contador from './componentes/Contador.js'
 
-<View styles = {styles.container}> 
-  <Contador inicial = "0" passo = "1"/> 
-  {/* passo - de quanto em quanto vai incrementar */}
-</View>
+// <View styles = {styles.container}> 
+//   <Contador inicial = "0" passo = "1"/> 
+//   {/* passo - de quanto em quanto vai incrementar */}
+// </View>
+
+//----------------------------------------------
+import ListaProdutos from './componentes/ListaProdutos.js'
+import produtos from './componentes/produtos.js';
+
+export default function App() {
+  const [mostrarMensagem, setMostrarMensagem] = React.useState(false)
+
+  return(
+    <View>
+      {mostrarMensagem && <ListaProdutos lista = {produtos} nome = "Qualquer lista"/>}
+
+      <Text/>
+      
+      <Button title = "Mostrar Lista"
+        onPress = {() => setMostrarMensagem(!mostrarMensagem)} />
+
+    </View>
+  )
+}

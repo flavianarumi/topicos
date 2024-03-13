@@ -13,11 +13,20 @@ export default props => {
     const inc = () => setNumero(numero+parseInt(props.passo))
     const dec = () => setNumero(numero-parseInt(props.passo))
 
+    const handleTextChange = (text) => {
+        text.trim() !== "" && !isNaN(text) ? setNumero(parseInt(text)) : setNumero(0);
+    };
+
     return (
         <>
             <Text style = {{fontSize: 35}}> {numero} </Text>
             <Button title = "+" onPress = {inc}/>
             <Button title = "-" onPress = {dec}/>
+            <TextInput  
+                placeholder = "Inicialize o contador"
+                onChangeText = {handleTextChange}
+                //value = {numero.toString()} - para não mudar o texto do input
+            />
         </>
     )
 }

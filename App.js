@@ -54,12 +54,16 @@
 //-----------------------------------------------
 import { Text, View, Button} from 'react-native';
 import styles from './estilos.js';
-import Contador from './componentes/Contador.js'
+import Pai from './componentes/Pai.js'
 
-<View styles = {styles.container}> 
-  <Contador inicial = "0" passo = "1"/> 
-  {/* passo - de quanto em quanto vai incrementar */}
-</View>
+export default function App() {
+  return (
+    <View style = {styles.container}> 
+      <Pai/> 
+    </View>
+  )
+}
+
 
 //----------------------------------------------
 // import ListaProdutos from './componentes/ListaProdutos.js'

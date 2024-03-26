@@ -86,22 +86,38 @@
 // }
 
 // --------------------------------------------
+// import React from "react";
+// import { Text, SafeAreaView, View, StyleSheet, Button } from "react-native";
+// import Familia from "./componentes/Familia.js";
+// import Membros from "./componentes/Membros.js";
+// import Card from "./componentes/Card.js";
+// import styles from "./estilos.js"
+
+// export default function App () {
+//   return (
+//     <View style={styles.container}>
+//       <Card>
+//         <Familia>
+//           <Membros nome="Maria" sobrenome="Silva"/>
+//           <Membros nome="Luan" sobrenome="Santos"/>
+//         </Familia>
+//       </Card>
+//     </View>
+//   )
+// }
+
+// --------------------------------------------
 import React from "react";
 import { Text, SafeAreaView, View, StyleSheet, Button } from "react-native";
-import Familia from "./componentes/Familia.js";
-import Membros from "./componentes/Membros.js";
-import Card from "./componentes/Card.js";
-import styles from "./estilos.js"
+import UsuarioLogado from "./componentes/UsuarioLogado";
+import styles from "./estilos";
 
-export default function App () {
+export default function App() {
   return (
-    <View style={styles.container}>
-      <Card>
-        <Familia>
-          <Membros nome="Maria" sobrenome="Silva"/>
-          <Membros nome="Luan" sobrenome="Santos"/>
-        </Familia>
-      </Card>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <UsuarioLogado usuario={ {nome: 'Lucas', email: 'lucas@unesp.br'} }></UsuarioLogado>
+      <UsuarioLogado usuario={ {email: 'rui@unesp.br'} }></UsuarioLogado>
+      <UsuarioLogado usuario={ {} }></UsuarioLogado>
+    </SafeAreaView>
   )
 }

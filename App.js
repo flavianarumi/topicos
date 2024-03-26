@@ -107,17 +107,29 @@
 // }
 
 // --------------------------------------------
+// import React from "react";
+// import { Text, SafeAreaView, View, StyleSheet, Button } from "react-native";
+// import UsuarioLogado from "./componentes/UsuarioLogado";
+// import styles from "./estilos";
+
+// export default function App() {
+//   return (
+//     <SafeAreaView style={styles.container}>
+//       <UsuarioLogado usuario={ {nome: 'Lucas', email: 'lucas@unesp.br'} }></UsuarioLogado>
+//       <UsuarioLogado usuario={ {email: 'rui@unesp.br'} }></UsuarioLogado>
+//       <UsuarioLogado usuario={ {} }></UsuarioLogado>
+//     </SafeAreaView>
+//   )
+// }
+
+// --------------------------------------------
 import React from "react";
-import { Text, SafeAreaView, View, StyleSheet, Button } from "react-native";
-import UsuarioLogado from "./componentes/UsuarioLogado";
+import { Text, View } from "react-native";
+import FlexBox from "./componentes/FlexBox";
 import styles from "./estilos";
 
 export default function App() {
-  return (
-    <SafeAreaView style={styles.container}>
-      <UsuarioLogado usuario={ {nome: 'Lucas', email: 'lucas@unesp.br'} }></UsuarioLogado>
-      <UsuarioLogado usuario={ {email: 'rui@unesp.br'} }></UsuarioLogado>
-      <UsuarioLogado usuario={ {} }></UsuarioLogado>
-    </SafeAreaView>
+  return(
+    <FlexBox/>
   )
 }

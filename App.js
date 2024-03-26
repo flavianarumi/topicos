@@ -52,17 +52,17 @@
 // }
 
 //-----------------------------------------------
-import { Text, View, Button} from 'react-native';
-import styles from './estilos.js';
-import Pai from './componentes/Pai.js'
+// import { Text, View, Button} from 'react-native';
+// import styles from './estilos.js';
+// import Pai from './componentes/Pai.js'
 
-export default function App() {
-  return (
-    <View style = {styles.container}> 
-      <Pai/> 
-    </View>
-  )
-}
+// export default function App() {
+//   return (
+//     <View style = {styles.container}> 
+//       <Pai/> 
+//     </View>
+//   )
+// }
 
 
 //----------------------------------------------
@@ -84,3 +84,20 @@ export default function App() {
 //     </View>
 //   )
 // }
+
+// --------------------------------------------
+import React from "react";
+import { Text, SafeAreaView, View, StyleSheet, Button } from "react-native";
+import CompProp from "./componentes/CompProp";
+import style from './estilos.js';
+
+export default function App () {
+  return (
+    <SafeAreaView style={style.container}>
+      <CompProp>
+        <Text>Componente de Texto</Text>
+        <Text>Componente de Texto</Text>
+      </CompProp>
+    </SafeAreaView>
+  )
+}

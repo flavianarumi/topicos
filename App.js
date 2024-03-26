@@ -88,16 +88,20 @@
 // --------------------------------------------
 import React from "react";
 import { Text, SafeAreaView, View, StyleSheet, Button } from "react-native";
-import CompProp from "./componentes/CompProp";
-import style from './estilos.js';
+import Familia from "./componentes/Familia.js";
+import Membros from "./componentes/Membros.js";
+import Card from "./componentes/Card.js";
+import styles from "./estilos.js"
 
 export default function App () {
   return (
-    <SafeAreaView style={style.container}>
-      <CompProp>
-        <Text>Componente de Texto</Text>
-        <Text>Componente de Texto</Text>
-      </CompProp>
-    </SafeAreaView>
+    <View style={styles.container}>
+      <Card>
+        <Familia>
+          <Membros nome="Maria" sobrenome="Silva"/>
+          <Membros nome="Luan" sobrenome="Santos"/>
+        </Familia>
+      </Card>
+    </View>
   )
 }

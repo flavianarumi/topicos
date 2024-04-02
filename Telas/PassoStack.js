@@ -8,7 +8,8 @@ export default props => (
                 ? <Button
                         title="Avançar"
                         onPress={() => {
-                            props.navigation.navigate(props.avancar)
+                            //props.navigation.navigate(props.avancar)
+                            props.navigation.push(props.avancar) //empilha as telas - funciona so com stack
                         }}/>
                 : false
             }

@@ -4,11 +4,11 @@ import PassoStack from "./PassoStack";
 
 export default props => {
     //console.warn(props.navigation.navigate != null)
-    props.navigation.navigate("TelaA")
+    props.navigation.navigate("TelaC")
     return (
-        <PassoStack {...props} avancar='TelaB'>
-            <TextoCentral corFundo = 'blue'>
-                Tela A
+        <PassoStack {...props} avancar='TelaA'>
+            <TextoCentral corFundo = 'red'>
+                Tela C
             </TextoCentral>
         </PassoStack>
     )

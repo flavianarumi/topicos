@@ -123,13 +123,26 @@
 // }
 
 // --------------------------------------------
-import React from "react";
-import { Text, View } from "react-native";
-import FlexBox from "./componentes/FlexBox";
-import styles from "./estilos";
+// import React from "react";
+// import { Text, View } from "react-native";
+// import FlexBox from "./componentes/FlexBox";
+// import styles from "./estilos";
 
-export default function App() {
-  return(
-    <FlexBox/>
-  )
-}
+// export default function App() {
+//   return(
+//     <FlexBox/>
+//   )
+// }
+// --------------------------------------------
+import React from "react";
+import { Text, View, SafeAreaView } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import MyStack from "./Telas/MyStack";
+
+export default props => (
+  <SafeAreaView style={{flex: 1}}>
+    <NavigationContainer>
+      <MyStack/>
+    </NavigationContainer>
+  </SafeAreaView>
+)

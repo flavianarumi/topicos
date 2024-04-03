@@ -1,15 +1,23 @@
-import React from "react";
-import TextoCentral from "./TextoCentral";
-import PassoStack from "./PassoStack";
+import React from 'react';
+import { Text, StyleSheet, View, Button } from 'react-native';
 
 export default props => {
-    //console.warn(props.navigation.navigate != null)
-    //props.navigation.navigate("TelaA")
     return (
-        <PassoStack {...props} avancar='TelaB'>
-            <TextoCentral corFundo = 'blue'>
+        <View style={[styles.tela, { backgroundColor: '#F38375' }]}>
+            <Text style={[{fontSize: 50, color: '#FFF' }]}>
                 Tela A
-            </TextoCentral>
-        </PassoStack>
-    )
-}
+            </Text>
+            <Button 
+                title="Ir para Tela B"
+                onPress={() => props.navigation.navigate('TelaB')}/>
+        </View>
+    );
+};
+
+const styles = StyleSheet.create({
+    tela: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: 'center',
+    }
+});

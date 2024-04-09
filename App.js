@@ -134,15 +134,29 @@
 //   )
 // }
 // --------------------------------------------
+// import React from "react";
+// import { Text, View, SafeAreaView } from "react-native";
+// import { NavigationContainer } from "@react-navigation/native";
+// import MyStack from "./Telas/MyStack";
+
+// export default props => (
+//   <SafeAreaView style={{flex: 1}}>
+//     <NavigationContainer>
+//       <MyStack/>
+//     </NavigationContainer>
+//   </SafeAreaView>
+// )
+// --------------------------------------------
 import React from "react";
 import { Text, View, SafeAreaView } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
-import MyStack from "./Telas/MyStack";
+//import Tab from "./Telas/Tab";
+import Drawer from "./Telas/Drawer";
 
 export default props => (
   <SafeAreaView style={{flex: 1}}>
     <NavigationContainer>
-      <MyStack/>
+      <Drawer/>
     </NavigationContainer>
   </SafeAreaView>
 )

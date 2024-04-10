@@ -151,12 +151,13 @@ import React from "react";
 import { Text, View, SafeAreaView } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 //import Tab from "./Telas/Tab";
-import Drawer from "./Telas/Drawer";
+//import Drawer from "./Telas/Drawer";
+import DrawerNavigator from "./Telas/DrawerNavigator";
 
 export default props => (
   <SafeAreaView style={{flex: 1}}>
     <NavigationContainer>
-      <Drawer/>
+      <DrawerNavigator/>
     </NavigationContainer>
   </SafeAreaView>
 )
